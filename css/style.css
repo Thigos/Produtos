@@ -1,3 +1,24 @@
+:root{
+    --primary-color: rgb(28,28,28); /*#1c1c1c*/
+    --secondary-color: rgb(252, 252, 252); /*#ff003a*/
+    --gradient: linear-gradient(318deg, var(--secondary-color) 0%, var(--primary-color) 35%);
+}
+
+html, body {
+    height: 100% !important;
+}
+
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+p, label, h1, h2, h3, h4,h5, a {
+    font-family: SourceSansPro,sans-serif;
+    
+}
+
 button{
     overflow: hidden;
     border: none;
@@ -24,6 +45,46 @@ button{
     justify-content: center;
     align-items: center;
 }
+
+.bt-cadastrar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 33px;
+    transition: 500ms;
+    bottom: 10px;
+    color: white;
+}
+
+.bt-cadastrar:hover{
+    transform: scale(1.05);
+}
+
+.bt-delete{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 33px;
+    transition: 500ms;
+    bottom: 10px;
+    color: white;
+}
+
+.bt-delete:hover{
+    transform: scale(1.05);
+}
+
 button p{
     position: relative;
     margin: 0px;
@@ -35,4 +96,53 @@ button:hover .div-bt{
 }
 button:hover p{
     color: white;
+}
+
+.custom-bt{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 33px;
+    transition: 500ms;
+    bottom: 10px;
+}
+
+.custom-bt a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.custom-bt:hover{
+    transform: scale(1.05);
+}
+
+.custom-navbar{
+    top: 0px;
+    z-index: 1;
+    height: 70px;
+    background: rgba(255, 0, 60, 0);
+    background: var(--gradient);
+}
+
+.card{
+    border-radius: 23px;
+}
+
+.card .card-img-top{
+    border-radius: 23px 23px 0px 0px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 50px 50px 50px 50px;
 }

@@ -17,6 +17,12 @@
       <li class="nav-item">
         <a class="nav-link" href="categoria-json.php">Categorias-Json</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadUser.php">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
+      </li>
     </ul>
   </div>
 </nav>
