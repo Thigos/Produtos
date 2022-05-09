@@ -52,6 +52,7 @@
                                 <input type="text" maxlength="100" placeholder="Nome" name="nomeUser" required>
                                 <input type="text" placeholder="Login" name="loginUser" required>
                                 <input type="password" placeholder="Senha" name="senhaUser" required>
+                                <input type="password" placeholder="Confirmar Senha" name="">
                                 <button class="bt-cadastrar" type="submit">Cadastrar</button>
                             </form>
                             

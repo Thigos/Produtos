@@ -51,7 +51,7 @@
                 margin-top: 20px;
                 border-radius: 50%;
                 width: 90px;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 transition: transform 500ms;
             }
 
@@ -113,6 +113,12 @@
                 transform: translateY(-80%) rotate(360deg);
             }
             }
+
+            a{
+                color: white;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
         </style>
     </head>
     <body>
@@ -134,6 +140,9 @@
                 <input type="password" name="lbPass" class="inputStyle" placeholder="Senha" onkeyup="showLabelPass();" required>
                 <br>
                 <button class="btLG" id="btLG" type="submit">Login</button>
+                <br>
+                <a href="cadUser.php">Cadastrar Usuário</a><br>
+                <a href="#">Esqueci Senha</a>
             </form>
         </div>
 
